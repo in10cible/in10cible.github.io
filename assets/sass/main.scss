@@ -1,0 +1,157 @@
+// CUSTOM BOOTSTRAP VARIABLES
+@import 'custom-variables';
+
+
+// BOOTSTRAP
+@import 'bootstrap/scss/bootstrap.scss';
+
+
+// FONTS
+@import url('https://fonts.googleapis.com/css?family=Raleway:900,900i|Roboto:300,400,400i,700');
+
+
+//-- Display
+// @font-face {
+//     font-family: 'Zen';
+//     font-style: normal;
+//     font-weight: 400;
+//     src: url(../fonts/zen_regular.ttf);
+// }
+
+
+// CUSTOM PARTIALS
+@import 'utilities';
+@import 'animations';
+@import 'typography';
+@import 'ui';
+
+
+// GLOBAL
+body{
+    @extend .ff-main;
+    @extend .fw-400;
+
+
+    background-color: $color-lighter;
+    background-image: url(../img/bg-leaf-top.png), url(../img/bg.png);
+    background-repeat: no-repeat, repeat;
+    background-position: 80% 0, top left;
+    color: $color-darker;
+    font-size: 1rem;
+    line-height: 1.5em;
+}
+
+
+// HEADER
+// .header{
+   
+// }
+
+// NAVBAR
+.navbar .nav-item{
+    @extend .mx-2;
+    font-family: $font-stack-alt;
+
+    a{
+        font-size: 1.3rem;
+        font-weight: bold;
+
+        .active{
+            
+        }
+    }
+
+    a,
+    a.nav-link{
+        color: $color-darker !important;
+    }
+
+    a.nav-link:hover{
+        color: $color-primary !important;
+    }
+
+    .dropdown-item:hover{
+        background: $color-dark;
+    }
+}
+
+
+// MAIN
+/*.main{
+    
+}*/
+
+.bg-banner{
+    background: linear-gradient(135deg, lighten($color-primary, 15%) 0%, $color-primary 100%);
+}
+
+.bg-bird{
+    background-image: url('../img/bg-cygogne-et-bebe.png');
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.bg-leaves{
+    background-image: url('../img/bg-leaf-left.png'), url('../img/bg-big-leaf-right.png');
+    background-position: center left, center right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.bg-leaf-left{
+    background-image: url('../img/bg-leaf-left.png');
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.bg-big-leaf-right{
+    background-image: url('../img/bg-big-leaf-right.png');
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.bg-leaf-right{
+    background-image: url('../img/bg-leaf-right.png');
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/*
+#recherche_rapide{
+    display: none;
+}
+
+#panel_recherche{
+   
+}
+
+#form_recherche{
+    
+}
+*/
+
+
+// FOOTER
+/*.footer{
+    
+}*/
+
+
+// ICONS
+/*#MenuIcon{
+    fill: $color-primary;
+}
+#CloseIcon{
+    fill: $color-primary;
+}*/
+
+
+
+@include media-breakpoint-up(md) {
+    
+}
+
