@@ -144,6 +144,8 @@ h3,
 }
 
 a{
+    color: $color-darker;
+    
     main &:link{
         @extend .bb;
         @extend .b-darker;
