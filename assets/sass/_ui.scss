@@ -119,11 +119,16 @@
 
 
 // MODALS
+.modal,
+.modal-content,
 .modal-header,
 .modal-footer{
     border: 0;
 }
 
+.modal-content{
+    @extend .box-elevate-md;
+}
 
 // PAGINATION
 .pagination{
@@ -179,7 +184,7 @@ hr:not([size]),
 .btn-xs{
     height: 35px;
     line-height: 35px;
-    font-size: .75rem;
+    font-size: .9rem;
     padding: 0 1rem;
 }
 .btn-lg{
@@ -188,6 +193,15 @@ hr:not([size]),
     font-size: 1.25rem;
     padding: 0 2rem;
 }
+
+[class*="btn-outline"]{
+    @extend .mb-2;
+}
+
+.btn-outline-primary{
+    color: $color-darker;
+}
+
 .btn-quick-search{
     @extend .animate-1;
     @extend .ff-main;

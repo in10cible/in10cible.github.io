@@ -174,7 +174,7 @@
 
                                 <div class="card-footer text-center">
                                     <hr class="mb-4">
-                                    <a href="#" class="btn btn-darker">En savoir plus</a>
+                                    <button type="button" class="btn btn-darker" data-bs-toggle="modal" data-bs-target="#exampleModal">En savoir plus</button>
                                 </div>
                             </div>
                         </div>
@@ -200,7 +200,7 @@
 
                                 <div class="card-footer text-center">
                                     <hr class="mb-4">
-                                    <a href="#" class="btn btn-darker">En savoir plus</a>
+                                    <button type="button" class="btn btn-darker" data-bs-toggle="modal" data-bs-target="#exampleModal">En savoir plus</button>
                                 </div>
                             </div>
                         </div>
@@ -226,7 +226,7 @@
 
                                 <div class="card-footer text-center">
                                     <hr class="mb-4">
-                                    <a href="#" class="btn btn-darker">En savoir plus</a>
+                                    <button type="button" class="btn btn-darker" data-bs-toggle="modal" data-bs-target="#exampleModal">En savoir plus</button>
                                 </div>
                             </div>
                         </div>
@@ -245,71 +245,60 @@
                         <div>
                             <h3 class="text-uppercase text-bold">Catégories</h3>
 
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                <label class="form-check-label" for="flexRadioDefault1">
-                                    Nouveautés
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                <label class="form-check-label" for="flexRadioDefault1">
-                                    Magics® Flexidry
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                <label class="form-check-label" for="flexRadioDefault1">
-                                    Magics® Pants
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                <label class="form-check-label" for="flexRadioDefault1">
-                                    Magics® Swim Pants
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                <label class="form-check-label" for="flexRadioDefault1">
-                                    Maison® Magics
-                                </label>
-                            </div>
+                            <input class="btn-check" type="checkbox" name="checkboxCategorie[]" id="checkboxCategories1">
+                            <label class="btn btn-outline-primary" for="checkboxCategories1">
+                                <i class="bi bi-asterisk"></i> Nouveautés
+                            </label>
+
+                            <input class="btn-check" type="checkbox" name="checkboxCategorie[]" id="checkboxCategories2">
+                            <label class="btn btn-outline-primary" for="checkboxCategories2">
+                                <i class="bi bi-bookmark"></i> Magics® Flexidry
+                            </label>
+
+                            <input class="btn-check" type="checkbox" name="checkboxCategorie[]" id="checkboxCategories3">
+                            <label class="btn btn-outline-primary" for="checkboxCategories3">
+                                <i class="bi bi-bookmark"></i> Magics® Pants
+                            </label>
+
+                            <input class="btn-check" type="checkbox" name="checkboxCategorie[]" id="checkboxCategories4">
+                            <label class="btn btn-outline-primary" for="checkboxCategories4">
+                                <i class="bi bi-bookmark"></i> Magics® Swim Pants
+                            </label>
+
+                            <input class="btn-check" type="checkbox" name="checkboxCategorie[]" id="checkboxCategories5">
+                            <label class="btn btn-outline-primary" for="checkboxCategories5">
+                                <i class="bi bi-house"></i> Maison® Magics
+                            </label>
                         </div>
 
                         <div class="bt py-4">
                             <h3 class="text-uppercase text-bold">Poids du bébé</h3>
-
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                <label class="form-check-label" for="flexRadioDefault1">
-                                    2 - 5 kg
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                <label class="form-check-label" for="flexRadioDefault1">
-                                    4 - 8 kg
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                <label class="form-check-label" for="flexRadioDefault1">
-                                    6 - 10 kg
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                <label class="form-check-label" for="flexRadioDefault1">
-                                    9 - 14 kg
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                <label class="form-check-label" for="flexRadioDefault1">
-                                    15 kg et plus
-                                </label>
-                            </div>
+                            
+                            <input class="btn-check" type="checkbox" name="checkboxPoidsBebe[]" id="checkboxPoidsBebe1">
+                            <label class="btn btn-outline-primary" for="checkboxPoidsBebe1">
+                                <i class="bi bi-hexagon"></i> 2 - 5 kg
+                            </label>
+                        
+                            <input class="btn-check" type="checkbox" name="checkboxPoidsBebe[]" id="checkboxPoidsBebe2">
+                            <label class="btn btn-outline-primary" for="checkboxPoidsBebe2">
+                                <i class="bi bi-hexagon"></i> 4 - 8 kg
+                            </label>
+                        
+                            <input class="btn-check" type="checkbox" name="checkboxPoidsBebe[]" id="checkboxPoidsBebe3">
+                            <label class="btn btn-outline-primary" for="checkboxPoidsBebe3">
+                                <i class="bi bi-hexagon"></i> 6 - 10 kg
+                            </label>
+                        
+                            <input class="btn-check" type="checkbox" name="checkboxPoidsBebe[]" id="checkboxPoidsBebe4">
+                            <label class="btn btn-outline-primary" for="checkboxPoidsBebe4">
+                                <i class="bi bi-hexagon"></i> 9 - 14 kg
+                            </label>
+                        
+                            <input class="btn-check" type="checkbox" name="checkboxPoidsBebe[]" id="checkboxPoidsBebe5">
+                            <label class="btn btn-outline-primary" for="checkboxPoidsBebe5">
+                                <i class="bi bi-hexagon"></i> 15 kg et plus
+                            </label>
+                            
                         </div>
                     </form>
                     
@@ -410,13 +399,28 @@
             </div>
         </section>
 
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main>
 
 
     <!-- ****************************************** -->
     <!-- NEWSLETTER OPT IN -->
     <!-- ****************************************** -->
-    <aside class="bg-primary bg-leaf-left color-lighter text-shadow-1 py-7 py-lg-8 wrapper">
+    <aside class="bg-primary bg-leaf-left color-lighter text-shadow-1 py-7 wrapper">
         <div class="container text-center wrapper z-10">
             <div class="row justify-content-center">
                 <div class="col-xl-7 py-5 px-md-5 p-xl-0 xs-alpha-filter sm-alpha-filter md-alpha-filter lg-alpha-filter">
@@ -488,7 +492,7 @@
 
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
         <div class="offcanvas-header">
-            <img src="public/img/logo.png" srcset="public/img/logo@2x.png 2x" width="175px" alt="">
+            <a href="accueil.html"><img src="public/img/logo.png" srcset="public/img/logo@2x.png 2x" width="175px" alt=""></a>
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
 
@@ -505,6 +509,15 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="ou-nous-trouver.html">Où nous trouver ?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Nous rejoindre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Protection des données personnelles</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Mentions légales</a>
                 </li>
             </ul>
 
