@@ -155,13 +155,12 @@
 hr,
 hr:not([size]),
 .hr{
-    height: 2px;
+    height: 4px;
     width: 12%;
     border: 0;
     outline: 0;
-    background-color: $color-darker !important; 
-
-    @extend .mx-auto;
+    opacity: 1;
+    background-color: $color-primary !important; 
 }
 
 
