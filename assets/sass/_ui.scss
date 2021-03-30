@@ -402,6 +402,20 @@ label{
         background-color: $color-light;
         box-shadow: none !important;
     }
+
+    .input-group &{
+        border-left: 0;
+    }
+}
+
+.input-group-text{
+    background: transparent;
+    
+    border: $bw-2 solid $color-darker;
+    border-right: 0;
+
+    color: $color-darker;
+    text-shadow: none;
 }
 
 .form-control-alt{
