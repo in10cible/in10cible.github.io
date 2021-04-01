@@ -95,7 +95,7 @@
         <div class="container-xl">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand w-xs-100 text-center" href="accueil.html">
                         <img src="public/img/logo.png" srcset="public/img/logo@2x.png 2x" alt="Logo de la marque de Magics" width="180px">
                     </a>
 
@@ -106,21 +106,30 @@
                     <div class="d-none d-lg-block">
                         <div class="text-end mb-3">
                             <a href="" class="btn btn-xs btn-primary">Espace professionnel</a>
+                            <span class="dropdown">
+                                <a href="#" class="btn btn-xs btn-transparent" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="public/img/drapeau-la-reunion.png" alt="Drapeaux de l'île de La Réunion" height="20" class="mr-2"> <i class="bi bi-chevron-down s-16"></i>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                </ul>
+                            </span>
                         </div>
 
                         <div>
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="nos-couches.html">Nos couches & culottes</a>
+                                    <a class="nav-link" aria-current="page" href="nos-couches.html">Nos couches & culottes</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link active" aria-current="page" href="le-meilleur-pour-bebe.html">Le meilleur pour bébé</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="magics-et-vous.html">Magics® et vous</a>
+                                    <a class="nav-link" aria-current="page" href="magics-et-vous.html">Magics® et vous</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="ou-nous-trouver.html">Où nous trouver ?</a>
+                                    <a class="nav-link" aria-current="page" href="ou-nous-trouver.html">Où nous trouver ?</a>
                                 </li>
                             </ul>
                         </div>
@@ -138,18 +147,18 @@
         <!-- ****************************************** -->
         <section class="wrapper bg-leaf-right">
             <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-lg-5">
-                        <img src="public/img/portrait-maman-et-bebe-dorment.jpg" alt="Portrait d'une maman heureuse avec son bébé dans les bras" class="img-fluid" style="margin-bottom: -90px;">
+                <div class="row align-items-center text-center text-lg-start">
+                    <div class="col-lg-6 col-xl-5">
+                        <img src="public/img/portrait-maman-et-bebe-dorment.jpg" alt="Portrait d'une maman heureuse avec son bébé dans les bras" class="img-fluid" style="margin-bottom: -100px;">
                     </div>
-                    <div class="col-lg-4 py-7 py-md-5 py-xl-8">
-                        <img src="public/img/icon-epingle-a-nourrice.png" alt="" class="mb-4">
+                    <div class="col-lg-4 mt-3 pb-7">
+                        <img src="public/img/icon-epingle-a-nourrice.png" alt="" height="90" class="mb-2">
                         
                         <h1 class="display-2 color-primary mb-4">
                             Découvrez nos couches et culottes 100% saines
                         </h1>
                         
-                        <hr>
+                        <hr class="mx-auto mx-md-0 mx-md-3">
                         
                         <p>Nos couches et nos culottes allient sécurité, protection contre les fuites et confort au porter. Elles accompagnent votre bébé dès sa naissance puis dans les différentes étapes de l’apprentissage de la propreté.</p>
 
@@ -172,46 +181,48 @@
                     <p class="lead fst-italic">Votre bébé a besoin des meilleures couches. Les couches Magics Flexidry répondront parfaitement à vos attentes. </p>
                 </div>
 
-                <div class="row align-items-center">
-                    <div class="col-lg-6 mb-5">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-5 mb-5 text-center text-lg-end">
                         <img src="public/img/photo-couche-sur-bebe.jpg" alt="" class="img-fluid img-rounded">
 
                     </div>
 
-                    <div class="col-lg-6 mb-7">
+                    <div class="col-lg-5 mb-7 text-center text-lg-start">
                         <h3 class="h2"><b>Une couche saine</b></h3>
                         
                         <div class="color-primary mb-5">
-                            <span style="font-size: 16rem; line-height: 0.8;" class="text-bold">O</span>
-                            <span style="font-size: 8rem; line-height: 0.8;" class="text-bold">%</span>
+                            <span style="font-size: 16rem; line-height: 0.8;" class="text-black">0</span>
+                            <sup style="font-size: 9rem; line-height: 0.8;" class="text-black">%</sup>
                         </div>
 
-                        <div class="bl bw-4 b-primary ps-3 mb-5 py-2">
-                            0% pétolatum,  0% chlore*,  0% colorant, 0% latex,  0% parfum
+                        <div class="bl bw-4 b-primary ps-3 mb-5 py-2 lead">
+                            <b>0% pétolatum,  0% chlore*,  0% colorant,<br>0% latex,  0% parfum</b>
                         </div>
 
                         <h3 class="h2"><b>Une couche accessible</b></h3>
-                        <div class="bl bw-4 b-primary ps-3 py-2">
+                        <div class="bl bw-4 b-primary ps-3 py-2 lead">
                             La meilleur qualité au meilleur prix pour tous
                         </div>
 
                     </div>
                 </div>
 
-                <div class="row text-center align-items-center justify-content-center">
+                <div class="row text-center align-items-start justify-content-center">
                     <div class="col-lg-5 mb-4">
-                        <img src="public/img/icon-absorption-rapide.png" alt="" class="img-fluid mb-3">
+                        <img src="public/img/icon-absorption-rapide.png" alt="" class="img-fluid mb-3" height="96">
                         <div class="mb-3">
                             <h3 class="h2"><b>Une couche confortable</b></h3>
                         </div>
+                        <hr class="mx-auto">
                         <p>Des matières ultra douces et hypoallergéniques en contact avec la peau, un voile extérieur 
                             micro aéré respirant, une couche qui s'adapte parfaitement à sa morphologie grâce aux attaches extensibles</p>
                     </div>
                     <div class="col-lg-5 mb-4">
-                        <img src="public/img/icon-protection-renforcee.png" alt="" class="img-fluid mb-3">
+                        <img src="public/img/icon-protection-renforcee.png" alt="" class="img-fluid mb-3" height="96">
                         <div class="mb-3">
                             <h3 class="h2"><b>Une protection optimale</b></h3>
                         </div>
+                        <hr class="mx-auto">
                         <p>Absorption rapide et uniforme grâce à la technologie des Magical Tubes®, jusqu'à 12h de protection contre les fuites grâce aux doubles barrières anti-fuites</p>
                     </div>
                     
@@ -254,7 +265,7 @@
         <!-- CERTIFICATIONS -->
         <!-- ****************************************** -->
         <section class="bg-lighter py-7 text-center">
-            <div class="container">
+            <div class="container-lg">
                 <hgroup class="mb-5">
                     <h2 class="h1 text-bold">
                         Plusieurs
@@ -288,34 +299,25 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-6 col-lg-3 mb-4"><img src="https://dummyimage.com/200x200.gif" alt="" class="img-fluid"></div>
-                    <div class="col-6 col-lg-3 mb-4"><img src="https://dummyimage.com/200x200.gif" alt="" class="img-fluid"></div>
-                    <div class="col-6 col-lg-3 mb-4"><img src="https://dummyimage.com/200x200.gif" alt="" class="img-fluid"></div>
-                    <div class="col-6 col-lg-3 mb-4"><img src="https://dummyimage.com/200x200.gif" alt="" class="img-fluid"></div>
-                    <div class="col-6 col-lg-3 mb-4"><img src="https://dummyimage.com/200x200.gif" alt="" class="img-fluid"></div>
-                    <div class="col-6 col-lg-3 mb-4"><img src="https://dummyimage.com/200x200.gif" alt="" class="img-fluid"></div>
-                    <div class="col-6 col-lg-3 mb-4"><img src="https://dummyimage.com/200x200.gif" alt="" class="img-fluid"></div>
-                    <div class="col-6 col-lg-3 mb-4"><img src="https://dummyimage.com/200x200.gif" alt="" class="img-fluid"></div>
+                    <div class="col-6 col-lg-3 mb-4"><img src="https://dummyimage.com/300x300.gif" alt="" class="img-fluid"></div>
+                    <div class="col-6 col-lg-3 mb-4"><img src="https://dummyimage.com/300x300.gif" alt="" class="img-fluid"></div>
+                    <div class="col-6 col-lg-3 mb-4"><img src="https://dummyimage.com/300x300.gif" alt="" class="img-fluid"></div>
+                    <div class="col-6 col-lg-3 mb-4"><img src="https://dummyimage.com/300x300.gif" alt="" class="img-fluid"></div>
+                    <div class="col-6 col-lg-3 mb-4"><img src="https://dummyimage.com/300x300.gif" alt="" class="img-fluid"></div>
+                    <div class="col-6 col-lg-3 mb-4"><img src="https://dummyimage.com/300x300.gif" alt="" class="img-fluid"></div>
+                    <div class="col-6 col-lg-3 mb-4"><img src="https://dummyimage.com/300x300.gif" alt="" class="img-fluid"></div>
+                    <div class="col-6 col-lg-3 mb-4"><img src="https://dummyimage.com/300x300.gif" alt="" class="img-fluid"></div>
                 </div>
             </div>
         </section>
 
 
         <!-- ****************************************** -->
-        <!-- DRYLOCK -->
+        <!-- VALEURS -->
         <!-- ****************************************** -->
-        <section class="py-7">
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-lg-7 mb-5">
-                        <img src="public/img/visuel-drylock.jpg" alt="" class="img-fluid">
-                    </div>
-                    <div class="col-lg-4">
-                        <img src="public/img/logo-drylock.png" alt="" class="img-fluid mb-4">
-                        <h2 class="mb-3"><b>Lorem ipsum dolor sit amet</b></h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, laudantium et veniam animi magnam aut. Mollitia quae perferendis quod. Accusantium fugiat quos illum aut cum nam pariatur omnis labore sunt.</p>
-                    </div>
-                </div>
+        <section>
+            <div>
+                <img src="public/img/visuel-drylock.jpg" alt="" class="img-fluid">
             </div>
         </section>
 
@@ -325,11 +327,11 @@
     <!-- ****************************************** -->
     <!-- NEWSLETTER OPT IN -->
     <!-- ****************************************** -->
-    <aside class="bg-primary bg-leaf-left color-lighter text-shadow-1 py-7 wrapper">
+    <aside class="bg-primary bg-leaf-left color-lighter text-shadow-1 py-7 py-lg-8 wrapper">
         <div class="container text-center wrapper z-10">
             <div class="row justify-content-center">
                 <div class="col-xl-7 py-5 px-md-5 p-xl-0 xs-alpha-filter sm-alpha-filter md-alpha-filter lg-alpha-filter">
-                    <h2 class="h1 mb-5">Parrainez et participez<br><b>aux Magics Days et tentez de gagner un mois de couche</b></h2>
+                    <h2 class="h1 mb-5">Abonnez-vous aux actualités de la marque<br><b>et profitez des avantages Magics</b></h2>
 
                     <form action="" class="d-flex my-5">
                         <div class="input-group mb-3">
@@ -355,7 +357,7 @@
             <div class="container text-center">
                 <p class="h1">Nous voulons faire partie<br>
                 de votre vie au-delà de la table à langer.<br>
-                <b>Appelez-nous ou écrivez-nous !</b></p>
+                <b>Rejoignez la communauté Magics!</b></p>
 
                 <hr class="my-5 mx-auto">
 
@@ -379,9 +381,9 @@
     <!-- ****************************************** -->
     <!-- MENU OFFCANVAS-->
     <!-- ****************************************** -->
-    <div class="fixed-br-4">
+    <div class="fixed-tr-3">
         <div>
-            <a data-bs-toggle="offcanvas" href="#offcanvasMenu" role="button" aria-controls="offcanvasMenu" class="btn btn-circle btn-secondary z-10">
+            <a data-bs-toggle="offcanvas" href="#offcanvasMenu" role="button" aria-controls="offcanvasMenu" class="d-lg-none btn btn-circle btn-primary z-10 box-elevate-md">
                 <i class="bi-list" data-bs-toggle="offcanvas"></i>
             </a>
         </div>
@@ -389,36 +391,36 @@
 
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
         <div class="offcanvas-header">
-            <a href="accueil.html"><img src="public/img/logo.png" srcset="public/img/logo@2x.png 2x" width="175px" alt=""></a>
+            <a href="accueil.html"><img src="public/img/logo.png" srcset="public/img/logo@2x.png 2x" width="150px" alt=""></a>
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
 
         <div class="offcanvas-body">
-            <ul class="navbar-nav mb-3">
+            <ul class="navbar-nav mb-4">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="nos-couches.html">Nos couches & culottes</a>
+                    <a class="nav-link" aria-current="page" href="nos-couches.html">Nos couches & culottes</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="le-meilleur-pour-bebe.html">Le meilleur pour bébé</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="magics-et-vous.html">Magics® et vous</a>
+                    <a class="nav-link" aria-current="page" href="magics-et-vous.html">Magics® et vous</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="ou-nous-trouver.html">Où nous trouver ?</a>
+                    <a class="nav-link" aria-current="page" href="ou-nous-trouver.html">Où nous trouver ?</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Nous rejoindre</a>
+                    <a class="nav-link" aria-current="page" href="#">Nous rejoindre</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Protection des données personnelles</a>
+                    <a class="nav-link" aria-current="page" href="#">Protection des données personnelles</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Mentions légales</a>
+                    <a class="nav-link" aria-current="page" href="#">Mentions légales</a>
                 </li>
             </ul>
 
-            <div class="mb-3">
+            <div class="mb-4">
                 <a href="#" target="_blank"><i class="bi-facebook mx-2" style="font-size: 2.5rem;"></i></a>
                 <a href="#" target="_blank"></a><i class="bi-instagram mx-2" style="font-size: 2.5rem;"></i></a>
             </div>
@@ -427,7 +429,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nihil quo eaque? Vero, quisquam quis pariatur mollitia sed tempore, in magnam perferendis aspernatur accusantium repudiandae minima sit ut totam voluptatum.
             </div>
         </div>
-      </div>
+    </div>
 
    
     <!-- ****************************************** -->

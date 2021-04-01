@@ -93,7 +93,7 @@ $xxl: $base-length * 7;
 // BORDER WIDTH
 $base-border-width: 4px;
 $bw-1: $base-border-width * 0.25;
-$bw-2: $base-border-width;
+$bw-2: $base-border-width * 0.5;
 $bw-3: $base-border-width * 2;
 $bw-4: $base-border-width * 4;
 

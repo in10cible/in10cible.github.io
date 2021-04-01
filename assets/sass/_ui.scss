@@ -148,6 +148,30 @@
 
 
 // NAVBAR
+.navbar-nav .nav-item{
+    @extend .mx-2;
+    font-family: $font-stack-alt;
+    
+    a,
+    a.nav-link{
+        color: $color-darker !important;
+        font-size: 1.2rem;
+        font-weight: bold;
+
+        &.active{
+            color: $color-primary !important;
+            border-bottom: $bw-2 solid $color-primary;
+        }
+    }
+
+    a.nav-link:hover{
+        color: $color-primary !important;
+    }
+
+    .dropdown-item:hover{
+        background: $color-dark;
+    }
+}
 
 
 
@@ -155,18 +179,24 @@
 hr,
 hr:not([size]),
 .hr{
-    height: 4px;
-    width: 12%;
+    height: 6px;
+    width: 100px;
     border: 0;
     outline: 0;
     opacity: 1;
     background-color: $color-primary !important; 
 }
 
+hr.hr-alt,
+hr:not([size]).hr-alt{
+    height: 2px;
+    background-color: $color-darker !important; 
+}
+
 
 // BUTTONS
 .btn{
-    font-size: 1rem;
+    font-size: 1.2rem;
     height: 55px;
     line-height: 55px;
     padding: 0 1.5rem;
@@ -177,8 +207,6 @@ hr:not([size]),
 
     @extend .animate-1;
     @extend .ff-alt;
-    @extend .text-uppercase;
-    @extend .fw-900;
 }
 .btn-xs{
     height: 35px;
@@ -198,19 +226,15 @@ hr:not([size]),
 }
 
 .btn-outline-primary{
+    border: solid $bw-2 $color-primary !important;
     color: $color-darker;
 }
 
-.btn-quick-search{
-    @extend .animate-1;
-    @extend .ff-main;
-    @extend .text-uppercase;
-    @extend .fw-900;
-
-    font-size: 1.125rem;
-    cursor: pointer;
-
+.btn-transparent{
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
 }
+
 .btn-primary,
 a.btn-primary:link,
 a.btn-primary:visited{
@@ -332,12 +356,12 @@ a.btn-lighter:visited{
 
 .btn-circle{
     padding: 0;
-    border-radius: 55px;
-    height: 55px;
-    width: 55px;
+    border-radius: 45px;
+    height: 45px;
+    width: 45px;
     text-align: center;
-    line-height: 55px;
-    font-size: 1.5rem;
+    line-height: 45px;
+    font-size: 1.3rem;
 }
 
 
@@ -416,6 +440,41 @@ label{
 
     color: $color-darker;
     text-shadow: none;
+}
+
+.input-group-alt{
+    
+    .form-control{
+        background: $color-primary;
+    
+        border-top: 0 !important;
+        border-bottom: 0 !important;
+        border-right: 0 !important;
+
+        color: $color-lighter;
+        
+        margin-right: 0;
+    }
+
+    .input-group-text{
+        height: 55px;
+
+        border-top: 0 !important;
+        border-bottom: 0 !important;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+
+        background: $color-primary;
+
+        border-left: 0;
+        color: $color-lighter;
+    }
+
+    .btn,
+    .btn-alt{
+        border-top-right-radius: 8px !important;
+        border-bottom-right-radius: 8px !important;
+    }
 }
 
 .form-control-alt{

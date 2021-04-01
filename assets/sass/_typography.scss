@@ -40,6 +40,12 @@
     font-weight: bold;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../webfonts/Montserrat-Black.ttf');
+    font-weight: 1000;
+    font-style: normal;
+}
 
 // HEADERS
 h1,
@@ -132,11 +138,14 @@ h3,
 }
 
 // BODY
+.text-black{
+    font-weight: 1000 !important;
+}
 .lead{
     @extend .fw-400;
 
     font-family: $font-stack-main;
-    font-size: 1.1875rem;
+    font-size: 1.05rem;
     line-height: $line-height-lg;
 }
 .big{

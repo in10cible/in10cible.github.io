@@ -31,56 +31,25 @@ body{
     @extend .ff-main;
     @extend .fw-400;
 
-
     background-color: $color-lighter;
     background-image: url(../img/bg-leaf-top.png), url(../img/bg.png);
     background-repeat: no-repeat, repeat;
     background-position: 80% 0, top left;
     color: $color-darker;
-    font-size: 1rem;
+    font-size: 0.9rem;
     line-height: 1.5em;
 }
 
 
 // HEADER
-// .header{
-   
-// }
 
-// NAVBAR
-.navbar .nav-item{
-    @extend .mx-2;
-    font-family: $font-stack-alt;
-
-    a{
-        font-size: 1.3rem;
-        font-weight: bold;
-
-        .active{
-            
-        }
-    }
-
-    a,
-    a.nav-link{
-        color: $color-darker !important;
-    }
-
-    a.nav-link:hover{
-        color: $color-primary !important;
-    }
-
-    .dropdown-item:hover{
-        background: $color-dark;
-    }
-}
 
 
 // MAIN
-/*.main{
-    
-}*/
 
+
+
+// BACKGROUNDS
 .bg-banner{
     background: linear-gradient(135deg, lighten($color-primary, 15%) 0%, $color-primary 100%);
 }
@@ -113,51 +82,36 @@ body{
     background-size: contain;
 }
 
-.bg-leaf-right{
-    background-image: url('../img/bg-leaf-right.png');
-    background-position: center right;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
 .bg-leaf-top{
     background-image: url(../img/bg-leaf-top.png);
     background-repeat: no-repeat;
     background-position: 80% 0;
 }
 
-/*
-#recherche_rapide{
-    display: none;
-}
-
-#panel_recherche{
-   
-}
-
-#form_recherche{
-    
-}
-*/
-
 
 // FOOTER
-/*.footer{
-    
-}*/
+
 
 
 // ICONS
-/*#MenuIcon{
-    fill: $color-primary;
-}
-#CloseIcon{
-    fill: $color-primary;
-}*/
 
 
 
 @include media-breakpoint-up(md) {
     
+    // BACKGROUNDS
+    .bg-leaf-right{
+        background-image: url('../img/bg-leaf-right.png');
+        background-position: center right;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+}
+
+@include media-breakpoint-only(xs) {
+    .bg-bird{
+        background-image: url('../img/bg-cygogne-et-bebe_mobile.png');
+    }
 }
 
