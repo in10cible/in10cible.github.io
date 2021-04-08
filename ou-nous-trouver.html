@@ -105,7 +105,7 @@
                     
                     <div class="d-none d-lg-block">
                         <div class="text-end mb-3">
-                            <a href="" class="btn btn-xs btn-primary">Espace professionnel</a>
+                            <a href="" class="btn btn-xs btn-primary">Club Magics</a>
                             <span class="dropdown">
                                 <a href="#" class="btn btn-xs btn-transparent" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                     <img src="public/img/drapeau-la-reunion.png" alt="Drapeaux de l'île de La Réunion" height="20" class="mr-2"> <i class="bi bi-chevron-down s-16"></i>
@@ -213,18 +213,206 @@
                         <script>
                             // Initialize and add the map
                             function initMap() {
-                            // The location of Uluru
-                            const uluru = { lat: -21.13511208481946, lng: 55.51627746927895 }; //-21.13511208481946, 55.51627746927895
-                            // The map, centered at Uluru
-                            const map = new google.maps.Map(document.getElementById("map"), {
-                                zoom: 10,
-                                center: uluru,
-                            });
-                            // The marker, positioned at Uluru
-                            const marker = new google.maps.Marker({
-                                position: uluru,
-                                map: map,
-                            });
+                            
+                                // Positions des points de ventes
+                                const laReunion = { lat: -21.13511208481946, lng: 55.51627746927895 }; //-21.13511208481946, 55.51627746927895
+
+                                const places = [
+                                    { 
+                                        lat: -20.898095, 
+                                        lng: 55.560935,
+                                        titre: "Leclerc Centre La Réserve ",
+                                        categorie: "Grande surface",
+                                        adresse: "14 rue du Général de Gaulle 97438 Sainte-Marie"
+                                    },
+                                    {
+                                        lat: -21.218065,
+                                        lng: 55.300865,
+                                        titre: "Leclerc Centre Portail",
+                                        categorie: "Grande surface",
+                                        adresse: "Zac PORTAIL 97424 Piton Saint-Leu"
+                                    },
+                                    {
+                                        lat: -21.372694,
+                                        lng: 55.602137,
+                                        titre: "Leclerc Centre Les Terrass",
+                                        categorie: "Grande surface",
+                                        adresse: "ZAC Les Terrass, 1 Rue Achile MALET, 97480 Saint-Joseph"
+                                    },
+                                    {
+                                        lat: -21.282501,
+                                        lng: 55.475307,
+                                        titre: "Leclerc Centre Ravine des Cabris",
+                                        categorie: "Grande surface",
+                                        adresse: "2 rue Pierre Blas 97432 La Ravine des Cabris"
+                                    },
+                                    {
+                                        lat: -20.886003,
+                                        lng: 55.468847,
+                                        titre: "Leclerc Centre Le Butor",
+                                        categorie: "Grande surface",
+                                        adresse: "2, avenue du Maréchal de Lattre de Tassigny 97490 Sainte-Clotilde"
+                                    },
+                                    {
+                                        lat: -21.2821631,
+                                        lng: 55.5178558,
+                                        titre: "Leclerc Centre Tampon centre ville",
+                                        categorie: "Grande surface",
+                                        adresse: "165, rue Hubert Delisle 97430 Le Tampon"
+                                    },
+                                    {
+                                        lat: -21.002283,
+                                        lng: 55.677469,
+                                        titre: "Leclerc Centre Express Bras Panon",
+                                        categorie: "Grande surface",
+                                        adresse: "Zone Artisanale, 4 rue des Lilas 97412 Bras Panon"
+                                    },
+                                    {
+                                        lat: -20.930789,
+                                        lng: 55.332587,
+                                        titre: "Leclerc Centre Express La possession",
+                                        categorie: "Grande surface",
+                                        adresse: "19, bis rue Sarda Garriga 97419 la Possession"
+                                    },
+                                    {
+                                        lat: -20.932091,
+                                        lng: 55.294617,
+                                        titre: "Leclerc Centre Express Le Port Citronelle",
+                                        categorie: "Grande surface",
+                                        adresse: "11, rue du 14 Juillet 1789 97420 Le Port"
+                                    },
+                                    {
+                                        lat: -20.886801,
+                                        lng: 55.460407,
+                                        titre: "Leclerc Centre Express Monthyon",
+                                        categorie: "Grande surface",
+                                        adresse: "Angle rues Monthyon et Jacob 97400 St Denis"
+                                    },
+                                    {
+                                        lat: -21.220752,
+                                        lng: 55.553215,
+                                        titre: "tesLeclerc Centre Express Plaine des cafres",
+                                        categorie: "Grande surface",
+                                        adresse: "70, RN3 - 23ème Km 97418 Plaine des Cafres"
+                                    },
+                                    {
+                                        lat: -20.901882,
+                                        lng:  55.508018,
+                                        titre: "Leclerc Centre Express Rivière des puies",
+                                        categorie: "Grande surface",
+                                        adresse: "Ancienne RN 2, Lieu dit Gillot, 97438 Ste Marie"
+                                    },
+                                    {
+                                        lat: -21.034843,
+                                        lng:  55.703228,
+                                        titre: "Leclerc Centre Express Saint-Benoit",
+                                        categorie: "Grande surface",
+                                        adresse: "Rue des Goyaves 97470 saint benoit"
+                                    },
+                                    {
+                                        lat: -21.286131,
+                                        lng: 55.419149,
+                                        titre: "Leclerc Centre Express Saint-Louis La palissade",
+                                        categorie: "Grande surface",
+                                        adresse: "Rue du Professeur Lapierre ZAC Palissade 97450 St Louis"
+                                    },
+                                    {
+                                        lat: -21.379719,
+                                        lng: 55.616157,
+                                        titre: "Leclerc Centre Express Saint-Joseph Rive gauche",
+                                        categorie: "Grande surface",
+                                        adresse: "Rue Amiral Lacaze 97480 Saint-Joseph"
+                                    },
+                                    {
+                                        lat: -20.985117,
+                                        lng: 55.292438,
+                                        titre: "Leclerc Centre Express Saint-Paul Savannah",
+                                        categorie: "Grande surface", 
+                                        dresse: "Savannah 97460 St Paul"
+                                    },
+                                    {
+                                        lat: -21.290446,
+                                        lng: 55.513189,
+                                        titre: "Leclerc Centre Express Tampon 400",
+                                        categorie: "Grande surface",
+                                        adresse: "Rue des Cardamomes 97430 Le Tampon"
+                                    },
+                                    {
+                                        lat: -20.98738503981236,
+                                        lng: 55.29414111285857,
+                                        titre: "Run Market Savanah",
+                                        categorie: "Grande surface",
+                                        adresse: "2 CD 4 ROUTE DE SAVANNA - 97460 SAINT-PAUL"
+                                    },
+                                    {
+                                        lat: -20.89335407201247,
+                                        lng: 55.486227524502915,
+                                        titre: "Run Market Chaudron",
+                                        categorie: "Grande surface",
+                                        adresse: "42 AVENUE JOSEPH BEDIER - 97490 SAINTE-CLOTILDE"
+                                    },
+                                    {
+                                        lat: -20.959771769406387,
+                                        lng: 55.65851963888791,
+                                        titre: "Run Market Cocoteraie",
+                                        categorie: "Grande surface",
+                                        adresse: "CENTRE COMMERCIAL DE LA COCOTERAIE - 97440 SAINT-ANDRÉ"
+                                    },
+                                    {
+                                        lat: -20.899687790927672,
+                                        lng: 55.5174357667412,
+                                        titre: "Run Market Duparc",
+                                        categorie: "Grande surface",
+                                        adresse: "ROND-POINT DUPARC - 97438 SAINTE-MARIE"
+                                    },
+                                ];
+                                
+                                //La map centré sur La Réunion
+                                const map = new google.maps.Map(document.getElementById("map"), {
+                                    zoom: 10,
+                                    center: laReunion,
+                                });
+                                
+
+                                const markers = [];
+                                const infowindow = new google.maps.InfoWindow();
+
+                                // Les markers
+                                for (const place in places) {
+
+                                    placePos = new google.maps.LatLng(places[place].lat, places[place].lng)
+
+                                    const placeIcon = '/public/img/map-marker.png';
+
+                                    //console.log(places[place]);
+
+                                    if (places[place].type == "leclerc") {
+                                        placeIcon = '/public/img/map-marker-restaurant.png';
+                                    }
+                                    else if (places[place].type == "runmarket") {
+                                        placeIcon = '/public/img/map-marker-service.png';
+                                    }
+
+                                    const marker = new google.maps.Marker({
+                                        position: placePos,
+                                        //icon: placeIcon,
+                                        map: map,
+                                        titre: places[place].titre,
+                                        categorie: places[place].categorie,
+                                        adresse: places[place].adresse,
+                                    });
+
+                                    const id = places[place].id;
+                                    (function (marker, id) {
+                                        google.maps.event.addListener(marker, 'click', function () {
+
+                                            infowindow.setContent('<div class="p-3 text-center"><h3 class="h4 no-mb">' + this.titre + '</h3><p style="font-size: 16px;">' + this.adresse + '</p>');
+                                            infowindow.open(map, this);
+                                        });
+                                    })(marker, id);
+
+                                    markers.push(marker);
+                                }
                             }
                         </script>
                     </div>

@@ -619,7 +619,7 @@ a.no-style{
 
 @include media-breakpoint-only(xs) {
     .xs-alpha-filter{
-        background-color: rgba(0, 0, 0, .20);
+        background-color: rgba(110, 196, 197, .75);
     }
 
     .text-xs-center{
@@ -633,7 +633,7 @@ a.no-style{
 
 @include media-breakpoint-only(sm) {
     .sm-alpha-filter{
-        background-color: rgba(0, 0, 0, .20);
+        background-color: rgba(110, 196, 197, .75);
     }
 
     .text-sm-center{
@@ -643,7 +643,7 @@ a.no-style{
 
 @include media-breakpoint-only(md) {
     .md-alpha-filter{
-        background-color: rgba(0, 0, 0, .20);
+        background-color: rgba(110, 196, 197, .75);
     }
 
     .text-md-center{
@@ -653,7 +653,7 @@ a.no-style{
 
 @include media-breakpoint-only(lg) {
     .lg-alpha-filter{
-        background-color: rgba(0, 0, 0, .20);
+        background-color: rgba(110, 196, 197, .75);
     }
 
     .text-lg-center{
@@ -663,7 +663,7 @@ a.no-style{
 
 @include media-breakpoint-only(xl) {
     .xl-alpha-filter{
-        background-color: rgba(0, 0, 0, .20);
+        background-color: rgba(110, 196, 197, .75);
     }
 
     .text-xl-center{
