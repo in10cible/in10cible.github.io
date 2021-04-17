@@ -1,0 +1,99 @@
+// BOOTSTRAP OPTIONS
+$enable-rounded: false;
+
+
+// COLORS
+$color-primary: #0000FE; // #ECD321;
+$color-secondary: #35FD9A; // #F1E76F;
+$color-third: #E7E6F9;
+$color-fourth: #000000;
+$color-danger: #DB6954;
+$color-success: green;
+$color-warning: orange;
+$color-info: #10176A;
+$color-light: #F1EEE9;
+$color-dark: #63615A; // #636157; //#727272; 
+$color-lighter: #FBFBF9;
+$color-darker: #393939;
+$color-black: #000;
+
+$color-facebook: #3A5998;
+$color-instagram: #C83F67;
+$color-twitter: #35A3F2;
+$color-viadeo: #EF7454;
+$color-linkedin: #1E669B;
+$color-youtube: #CE3B28;
+
+$theme-colors: (
+  primary: $color-primary,
+  secondary: $color-secondary,
+  third: $color-third,
+  success: $color-success,
+  info: $color-info,
+  warning: $color-warning,
+  danger: $color-danger,
+  light: $color-light,
+  dark: $color-dark,
+);
+
+
+// BODY
+$body-bg:       $color-lighter;
+$body-color:    $color-dark;
+
+
+// FONTS
+$font-stack-display: 'Barlow Condensed', sans-serif;
+$font-stack-alt: 'Barlow Condensed', sans-serif;
+$font-stack-main: 'Barlow Condensed', sans-serif;
+
+$font-weight-thin: 200;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+$font-weight-black: 900;
+
+$line-height-xl: 2em;
+$line-height-lg: 1.5em;
+$line-height-md: 1.3em;
+$line-height-sm: 1.25em;
+
+
+// SPACING
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: ($spacer * .25),
+  2: ($spacer * .5),
+  3: $spacer,
+  4: ($spacer * 2),
+  5: ($spacer * 3),
+  6: ($spacer * 4),
+  7: ($spacer * 5),
+  8: ($spacer * 10),
+  9: ($spacer * 16),
+  10: ($spacer * 24)
+);
+
+
+// BASE LENGTH
+$base-length: 30px;
+$xs: $base-length * .25;
+$sm: $base-length * .5;
+$md: $base-length;
+$lg: $base-length * 2;
+$xl: $base-length * 4;
+$xxl: $base-length * 7;
+
+
+// BORDER WIDTH
+$base-border-width: 4px;
+$bw-1: $base-border-width * 0.25;
+$bw-2: $base-border-width * 0.5;
+$bw-3: $base-border-width * 2;
+$bw-4: $base-border-width * 4;
+
+
+// BASE SPEED ANIMATION
+$base-speed-animation: 0.5s;
