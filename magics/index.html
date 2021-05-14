@@ -91,7 +91,8 @@
   </head>
   <body>
     
-    <header class="header pb-5">
+    <!-- <header class="header pb-5"> -->
+    <header class="header pb-5 position-absolute w-100 z-10"> <!-- class supplémentaire pour la home page uniquement -->
         <div class="container-xl">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
@@ -145,18 +146,20 @@
         <!-- ****************************************** -->
         <!-- CAROUSEL -->
         <!-- ****************************************** -->
-        <section class="py-lg-7 wrapper bg-leaf-right">
+        <section class="py-lg-7 wrapper bg-leaf-right" style="background-image: url(public/img/bg-top-home.jpg); background-position: top left; background-size: cover;">
             <div class="container">
-                <div class="row text-xs-center">
+                <div class="row text-xs-center align-items-center"> <!-- align-items-center à ajouter pour centrer verticalement le texte -->
                     <div class="col-lg-5 mb-5">
-                        <h1 class="display-2 color-primary mb-5">
-                            Découvrez nos couches et culottes 100% saines,
-                            <div class="h1 color-darker">le meilleur choix pour votre bébé !</div>
+                        <h1 class="display-2 color-lighter mb-5">
+                            Magics, des couches 100% saines,
+                            <div class="h2 color-lighter mt-2 p-2" style="background: rgba(110,196,197,0.5);">Le meilleur choix pour votre bébé !</div>
                         </h1>
-                        <a href="#" class="btn btn-darker fst-italic">En savoir plus</a>
+                        <a href="" data-bs-toggle="modal" class="btn btn-alt fst-italic me-md-2"><i class="bi bi-play-circle-fill"></i> Voir la vidéo</a> <a href="#" class="btn btn-darker fst-italic">En savoir plus</a>
                     </div>
                     <div class="col-lg-7 order-first">
-                        <img src="public/img/visuel-decouvrez-nos-couches.png" alt="" class="img-fluid mb-4">
+                        <!-- <img src="public/img/top-home-mobile.jpg" class="d-md-none img-fluid" alt=""> -->
+                        <div class="d-md-block section-h-50"></div>
+                        <div class="d-none d-md-block section-h-85"></div>
                     </div>
                 </div>
             </div>
